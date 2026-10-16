@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 - 分贝仪</title>
+<style>
+  :root { --accent: #FF9F0A; --bg: #ffffff; --text: #1c1c1e; --sub: #6b7280; --card: #f5f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --text: #f5f5f7; --sub: #9ca3af; --card: #1c1c1e; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 24px; line-height: 1.7; }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 26px; font-weight: 700; margin: 0 0 8px; }
+  .updated { font-size: 13px; color: var(--sub); margin-bottom: 32px; }
+  h2 { font-size: 17px; font-weight: 600; margin: 28px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul { padding-left: 20px; }
+  .card { background: var(--card); border-radius: 12px; padding: 16px; margin: 20px 0; }
+  .accent { color: var(--accent); }
+  a { color: var(--accent); text-decoration: none; }
+  nav { margin-top: 40px; font-size: 14px; text-align: center; }
+  nav a { margin: 0 10px; }
+  footer { margin-top: 24px; font-size: 13px; color: var(--sub); text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>隐私政策</h1>
+  <div class="updated">最后更新：2026 年 10 月 16 日</div>
+
+  <div class="card">
+    <p><strong>核心承诺：</strong>分贝仪<span class="accent">不录音、不保存、不上传</span>任何音频数据。
+    所有声音信息只在你的设备内存中实时计算，用完即弃。</p>
+  </div>
+
+  <h2>1. 我们收集什么</h2>
+  <p>分贝仪不收集任何个人数据。应用没有账号系统、没有服务器，也不会向任何服务器发送信息。</p>
+
+  <h2>2. 音频数据如何处理</h2>
+  <p>检测时，应用通过麦克风获取实时音频采样，在设备内存中计算出声压级（分贝）数值，用于界面显示。这些采样数据：</p>
+  <ul>
+    <li>不会写入磁盘或任何文件；</li>
+    <li>不会上传到网络；</li>
+    <li>不会用于语音识别或内容分析；</li>
+    <li>计算完成后立即丢弃。</li>
+  </ul>
+  <div class="card">
+    <p>「定时测量」保存的是<strong>计算出的分贝数值</strong>（见第 3 节），<span class="accent">不包含任何音频</span>，也没有任何录音文件产生。</p>
+  </div>
+
+  <h2>3. 数据存储</h2>
+  <p>本应用没有服务器，你在应用中产生的所有数据都只保存在你的设备上。</p>
+  <p><strong>实时统计</strong>：「当前 / 最小 / 最大 / 平均」等数值仅存在于运行内存中，完全退出应用后即被清空。</p>
+  <p><strong>测量记录</strong>：当你使用「定时测量」并保存一次测量后，该记录会保存在设备本地，内容为开始时间、时长与分贝数值序列——<strong>不包含任何音频</strong>。这些记录：</p>
+  <ul>
+    <li>不会上传到网络，开发者无法访问，也不会在其他设备之间同步；</li>
+    <li>可以在应用内的「测量记录」中随时左滑删除；</li>
+    <li>卸载应用时由系统一并清除（若你开启了 iCloud 备份，记录可能随系统备份一同保存，这属于 iOS 的系统行为）。</li>
+  </ul>
+  <p>通过「导出 CSV」生成的文件保存到何处（如「文件」App，或发送给他人）完全由你自行决定。</p>
+
+  <h2>4. 权限说明</h2>
+  <ul>
+    <li><strong>麦克风</strong>（必需）：用于实时检测环境噪音的分贝值。除实时数值计算外不作他用——<strong>不会录音、不会保存、不会上传</strong>。</li>
+  </ul>
+  <p>如果你拒绝授权，应用不会崩溃，会显示提示文案并提供前往系统设置的入口。</p>
+
+  <h2>5. 第三方</h2>
+  <p>本应用不集成任何第三方 SDK、不包含广告、不进行数据分析，也不做任何形式的用户追踪。</p>
+
+  <h2>6. 儿童隐私</h2>
+  <p>本应用不面向 13 岁以下儿童，也不会有意收集儿童信息。</p>
+
+  <h2>7. 你的权利</h2>
+  <p>由于应用既不收集也不存储任何数据，你无需做任何额外操作——随时删除应用即可，不会有数据残留。</p>
+
+  <h2>8. 测量免责</h2>
+  <p>本应用使用设备麦克风测量环境音量，未经专业声级计校准，结果仅为<strong>相对参考值</strong>，不可用于法律、医疗、职业健康或工业等需要精确计量的场景。</p>
+
+  <h2>9. 联系我们</h2>
+  <p>如有任何疑问，请联系：<a href="mailto:15218513696@139.com">15218513696@139.com</a></p>
+
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="terms.html">使用条款</a>
+    <a href="support.html">支持</a>
+  </nav>
+
+  <footer>© 2026 分贝仪 DecibelMeter. All rights reserved.</footer>
+</div>
+</body>
+</html>

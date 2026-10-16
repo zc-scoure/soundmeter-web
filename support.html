@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>支持 - 分贝仪</title>
+<style>
+  :root { --accent: #FF9F0A; --bg: #ffffff; --text: #1c1c1e; --sub: #6b7280; --card: #f5f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --text: #f5f5f7; --sub: #9ca3af; --card: #1c1c1e; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 24px; line-height: 1.7; }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 26px; font-weight: 700; margin: 0 0 8px; }
+  .sub { font-size: 15px; color: var(--sub); margin-bottom: 32px; }
+  h2 { font-size: 17px; font-weight: 600; margin: 28px 0 12px; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 20px; }
+  .faq { background: var(--card); border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+  .faq h3 { font-size: 15px; margin: 0 0 6px; }
+  .faq p { font-size: 14px; color: var(--sub); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  nav { margin-top: 40px; font-size: 14px; text-align: center; }
+  nav a { margin: 0 10px; }
+  footer { margin-top: 24px; font-size: 13px; color: var(--sub); text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>支持</h1>
+  <p class="sub">分贝仪使用帮助</p>
+
+  <h2>常见问题</h2>
+
+  <div class="faq">
+    <h3>Q：为什么读数一直在跳动？</h3>
+    <p>A：环境声音本身就是波动的，应用已经对显示值做了滑动平均平滑。安静环境里出现小幅跳动属于正常现象，不影响等级判断。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：读数准确吗？需要校准吗？</h3>
+    <p>A：手机麦克风不是专业声级计，读数为相对参考值，用于比较不同环境的噪音高低。不同设备的麦克风灵敏度存在差异，数值可能不一致，不能用于需要精确计量的场合。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：为什么打开应用就自动开始检测了？</h3>
+    <p>A：设计如此。应用没有开始/停止按钮，打开即测、离开页面自动停止，避免忘记关闭造成耗电。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：会录下我的声音吗？</h3>
+    <p>A：不会。音频采样只在内存中实时计算分贝值，不会写入磁盘、不会上传服务器。详见<a href="privacy.html">隐私政策</a>。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：插着耳机时读数很低，正常吗？</h3>
+    <p>A：应用使用设备内置麦克风采集声音。若外接设备占用了音频输入通道，可能导致读数异常，建议拔掉外接设备后重试。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：最小/最大/平均怎么重置？</h3>
+    <p>A：打开「设置 → 重置统计数据」，确认后即可清零（只清统计数值，不影响你的偏好设置）。完全退出应用再重新打开也会清零。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：切到后台会继续耗电吗？</h3>
+    <p>A：不会。应用切到后台时会自动暂停检测并释放音频资源，回到前台后自动恢复。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：支持哪些设备？</h3>
+    <p>A：iPhone 与 iPad，需要 iOS 17.0 或更高版本，支持横竖屏。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：误点了「不允许」麦克风权限怎么办？</h3>
+    <p>A：前往「设置 → 隐私与安全性 → 麦克风」，找到分贝仪并打开开关，然后重新打开应用即可。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：怎么开始一段定时测量？</h3>
+    <p>A：点主页左上角的「测量记录」图标，再点右上角「+」即可开始，无需手动按开始。测量期间会按你设定的「采样间隔」每隔一段时间记录一个分贝读数，点「结束测量」后进入结果页，可以查看时长、最小/最大/平均值、等效声级 Leq 与折线图。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：测量过程中切到后台会怎样？</h3>
+    <p>A：为避免记录出现时间空洞，切到后台会<strong>自动结束本次测量且不保存</strong>，回到应用后点「重新开始」即可。主页面的实时检测不受影响，回到前台会自动恢复。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：导出的 CSV 保存在哪里？里面是什么？</h3>
+    <p>A：在测量结果页点「生成 CSV」→「分享 / 存储到「文件」」，即可存到「文件」App 或发送给他人。表格共三列：经过秒数、时间、分贝值，只含数值，<strong>不包含任何音频</strong>。用 Excel 或 Numbers 打开时中文表头不会乱码。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q：测量记录存在哪里？怎么删除？</h3>
+    <p>A：记录只保存在你的设备本地，不会上传、不会在设备之间同步。在「测量记录」列表中左滑即可删除单条记录；卸载应用会一并清除全部本地数据。</p>
+  </div>
+
+  <h2>联系我们</h2>
+  <p>如遇问题或有建议，欢迎邮件联系：<a href="mailto:15218513696@139.com">15218513696@139.com</a></p>
+
+  <h2>相关链接</h2>
+  <ul>
+    <li><a href="privacy.html">隐私政策</a></li>
+    <li><a href="terms.html">使用条款</a></li>
+  </ul>
+
+  <nav>
+    <a href="index.html">首页</a>
+  </nav>
+
+  <footer>© 2026 分贝仪 DecibelMeter. All rights reserved.</footer>
+</div>
+</body>
+</html>

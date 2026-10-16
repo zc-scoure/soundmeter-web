@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>分贝仪 - 打开即测，看得见的噪音</title>
+<style>
+  :root { --accent: #FF9F0A; --bg: #ffffff; --text: #1c1c1e; --sub: #6b7280; --card: #f5f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --text: #f5f5f7; --sub: #9ca3af; --card: #1c1c1e; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+  .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; text-align: center; }
+  .icon { font-size: 72px; margin-bottom: 24px; }
+  h1 { font-size: 34px; font-weight: 700; margin: 0 0 12px; }
+  .tagline { font-size: 18px; color: var(--sub); margin-bottom: 28px; }
+  .scale-bar { height: 10px; max-width: 320px; margin: 0 auto 40px; border-radius: 5px;
+    background: linear-gradient(90deg,
+      #34C759 0%, #34C759 27.3%,
+      #A8E05F 27.3%, #A8E05F 45.5%,
+      #FFD60A 45.5%, #FFD60A 63.6%,
+      #FF9F0A 63.6%, #FF9F0A 81.8%,
+      #FF3B30 81.8%, #FF3B30 90.9%,
+      #C7C7CC 90.9%, #C7C7CC 100%); }
+  .features { text-align: left; margin: 40px 0; }
+  .feature { display: flex; align-items: flex-start; gap: 16px; padding: 16px; background: var(--card); border-radius: 14px; margin-bottom: 12px; }
+  .feature-icon { font-size: 28px; flex-shrink: 0; }
+  .feature-text h3 { font-size: 16px; margin: 0 0 4px; }
+  .feature-text p { font-size: 14px; color: var(--sub); margin: 0; }
+  .cta { display: inline-block; margin-top: 32px; padding: 14px 40px; background: var(--accent); color: #fff; border-radius: 14px; font-size: 17px; font-weight: 500; text-decoration: none; }
+  nav { margin-top: 48px; font-size: 14px; }
+  nav a { color: var(--accent); text-decoration: none; margin: 0 10px; }
+  footer { margin-top: 32px; font-size: 13px; color: var(--sub); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="icon">🔊</div>
+  <h1>分贝仪</h1>
+  <p class="tagline">打开即测，看得见的噪音</p>
+  <div class="scale-bar"></div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🎚️</div>
+      <div class="feature-text">
+        <h3>0–110 dB 彩色刻度</h3>
+        <p>六段配色从绿到灰，看一眼就知道当前环境有多吵</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <div class="feature-text">
+        <h3>四项实时统计</h3>
+        <p>当前、最小、最大、平均同时呈现，读数自动平滑不跳动</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-text">
+        <h3>零操作启动</h3>
+        <p>没有开始/停止按钮，打开就测，离开自动停止</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-text">
+        <h3>完全离线</h3>
+        <p>不录音、音频不落盘、不上传，声音只在内存里实时计算</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO(P0-3): 上架后把 idYOUR_APP_ID 换成真实 App ID，否则这个按钮会 404 -->
+  <a class="cta" href="https://apps.apple.com/app/idYOUR_APP_ID">前往 App Store</a>
+
+  <nav>
+    <a href="privacy.html">隐私政策</a>
+    <a href="terms.html">使用条款</a>
+    <a href="support.html">支持</a>
+  </nav>
+
+  <footer>© 2026 分贝仪 DecibelMeter. All rights reserved.</footer>
+</div>
+</body>
+</html>
